@@ -9,7 +9,7 @@
         <input class="container input value" id="value1" />
 
 
-        <select class="container button" id="select">
+        <select class="container choice button" id="select">
             <option id="1">+</option>
             <option id="2">-</option>
             <option id="3">*</option>
@@ -17,7 +17,10 @@
         </select>
         <input class="container input value" id="value2" />
     </div>
-    <button class="container button row " id="getResult" onclick="buttonClicker()">Вычислить</button>
-    <div class="container row textareatext" id="results"> </div>
+    <button class="container button row" id="getResult" onclick="buttonClicker()">Вычислить</button>
+    <div class="container row textareatext" id="results">
+        <var class="memorylist" id="memory"></var>
+        <var class="textareatext" id="lastresult"></var>
+    </div>
 </body>
 </html>

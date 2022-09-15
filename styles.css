@@ -11,7 +11,6 @@
 .input {
     margin: 10px 30px 10px 30px;
     min-width: 200px;
-
     width: 15%;
 }
 
@@ -28,11 +27,19 @@
     width: 10%;
 }
 
+.choice {
+    min-width: 70px;
+}
+
 .row {
     display: inline-flex;
     display: block;
     align-self: center;
     align-items: center;
+}
+
+.memorylist {
+    color: coral;
 }
 
 .textareatext {
@@ -50,7 +57,6 @@ body {
 }
 
 @media (max-width: 600px) {
-
     .container {
         margin: 10px auto;
         display: block;

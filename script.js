@@ -4,12 +4,14 @@ function buttonClicker() {
 
     let value1 = document.getElementById("value1").value;
     let value2 = document.getElementById("value2").value;
-    let result = parseFloat(value1);
-
+    let result = document.getElementById("lastresult").value;
+    let last = document.getElementById("lastresult").value;
+    
     if (isNaN(parseFloat(value1)) || isNaN(parseFloat(value2))) {
-        result = "Ой! Вы ошиблись! Попробуйте еще раз!";
+        result = "Что-то пошло не так! Попробуйте еще раз! :)";
         console.log(results);
-        document.getElementById("results").innerHTML += result + "<br/>";
+        document.getElementById("lastresult").innerHTML = result + "<br/>";
+        document.getElementById("memory").innerHTML += result + "<br/>";
         return;
     }
     switch (selectedElement.value) {
@@ -26,13 +28,15 @@ function buttonClicker() {
             if (parseFloat(value2) > 0)
                 result = parseFloat(value1) / parseFloat(value2);
             else
-                result = "Делить на ноль нельзя!";
+                result = "Делить на ноль нельзя! :)";
             break;
         default:
-            result = "Невалидные данные!";
+            result = "Невалидные данные! :(";
     }
-    if (result != 0)
+    if (!isNaN(result))
         result = value1 + " " + selectedElement.value + " " + value2 + " " + "=" + " " + result;
-    document.getElementById("results").innerHTML += result + "<br/>";
-    console.log(value1, value2);
+    document.getElementById("memory").innerHTML += result + "<br/>";
+    document.getElementById("lastresult").innerHTML = result + "<br/>";
+
+    console.log(result, "<br/>", memory);
 }
