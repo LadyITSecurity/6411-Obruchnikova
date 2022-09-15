@@ -3,32 +3,57 @@
     border: dashed;
     border-block-color: darkred;
     border-radius: 10px;
+    text-align: center;
     vertical-align: central;
     min-height: 30px;
 }
 
 .input {
-    margin: 10px 10% 10px 10%;
+    margin: 10px 30px 10px 30px;
+    min-width: 200px;
+
+    width: 15%;
+}
+
+.topline {
+    display: flex;
+    flex-direction: column;
 }
 
 .button {
-    margin: 10px auto 10px auto;
+    margin: 10px auto;
+    display: inline-flex;
     text-align: center;
-    width: 100px;
+    min-width: 90px;
+    width: 10%;
 }
 
-.row{
-    display:block;
-    align-self:center;
+.row {
+    display: inline-flex;
+    display: block;
+    align-self: center;
     align-items: center;
 }
 
-.textareatext{
+.textareatext {
+    margin: 10px auto 10px auto;
     min-height: 50px;
+    min-width: 250px;
+    width: 45%;
 }
 
 body {
     background-color: palegreen;
-    text-align:center;
+    text-align: center;
     color: darkred;
+    min-width: 300px;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        margin: 10px auto;
+        display: block;
+        text-align: center;
+    }
 }
