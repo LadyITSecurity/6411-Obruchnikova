@@ -25,7 +25,7 @@ function buttonClicker() {
             result = parseFloat(value1) * parseFloat(value2);
             break;
         case "/":
-            if (parseFloat(value2) > 0)
+            if (parseFloat(value2) != 0)
                 result = parseFloat(value1) / parseFloat(value2);
             else
                 result = "Делить на ноль нельзя! :)";
