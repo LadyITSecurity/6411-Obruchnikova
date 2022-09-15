@@ -1,0 +1,34 @@
+.container {
+    background-color: palegreen;
+    border: dashed;
+    border-block-color: darkred;
+    border-radius: 10px;
+    vertical-align: central;
+    min-height: 30px;
+}
+
+.input {
+    margin: 10px 10% 10px 10%;
+}
+
+.button {
+    margin: 10px auto 10px auto;
+    text-align: center;
+    width: 100px;
+}
+
+.row{
+    display:block;
+    align-self:center;
+    align-items: center;
+}
+
+.textareatext{
+    min-height: 50px;
+}
+
+body {
+    background-color: palegreen;
+    text-align:center;
+    color: darkred;
+}
